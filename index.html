@@ -15,7 +15,7 @@
   <body>
       <div class="navigation">
           <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(64, 16, 126)">
-            <a class="navbar-brand" style="color:rgb(255, 255, 255);" href="index.html">Latitude</a>
+            <a class="navbar-brand" style="color:rgb(255, 255, 255);" href="index.html">WeatherPy DataViz Dashboard</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <i class="far fa-minus-square" style="color:rgb(255, 255, 255);"></i>
@@ -47,12 +47,63 @@
         </div>
 
       <div class="jumbotron">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 ">
+                <div class="card card-custom">
+                  <div class="card-body">
+                    <h2 class="card-header text-center">
+                    Summary: Semi-Global Weather Analysis</h2>
+                    <p class="card-text"><iframe src="https://giphy.com/embed/hZSZS9HhbnRcI" frameBorder="0" class="giphy-embed" allowFullScreen style="width: 100%;"></iframe></p>
+                      <p>The WeatherPy Project analyzed the weather in over 500 cities across different latitudes on the same day.
+                        Basically, we took a snapshot of the day's weather across the globe by pulling data from the OpenWeatherMap
+                        API. Then we cleaned up the numbers and crunched them using pandas. We used the dataset to plot different 
+                        aspects of the weather across cities' latitudes. We specifically looked at how temperature, cloudiness, 
+                        wind speed, and humidity differed across the globe on that particular day. Using our data, we built a site
+                        that allowed the world to visualize the patterns nicely. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card-custom">
+                  <div class="card-body">
+                    <h2 class="card-header"><i class="far fa-images fa-fw"></i> Visualisations</h2>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization1.html"><img src="Assets/images/Fig1.png" class=" img-thumbnail" alt="Latitude vs Temperature"><p class="card-text" align="center" style="color:black"><small>Latitude vs. Temperature</small></p></a>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization3.html"><img src="Assets/images/Fig3.png" class="img-thumbnail" alt="Latitude vs cloudiness"><p class="card-text" align="center" style="color:black" ><small>Latitude vs. Cloudiness</small></p></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization2.html"><img src="Assets/images/Fig2.png" class="img-thumbnail" alt="Latitude vs Humidity"><p class="card-text" align="center" style="color:black"><small>Latitude vs. Humidity</small></p></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="hovereffect">
+                          <a href="Visualization4.html"><img src="Assets/images/Fig4.png" class=" img-thumbnail" alt="Latitude vs Wind Speed"><p class="card-text" align="center" style="color:black"><small>Latitude vs. Wind Speed</small></p></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <footer>
+          <p class="text text-center">&copy; M.R.Rao, 2019</p>
+      </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
